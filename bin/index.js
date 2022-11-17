@@ -76,6 +76,18 @@ const playGame = (numberOfDice) => {
     return score;
 }
 
+let iterations = parseInt(options.iterations);
+let dice = parseInt(options.dice);
+if (isNaN(iterations)) {
+    console.error('Iterations must be an integer!');
+}
+if (isNaN(dice)) {
+    console.error('Dice must be an integer!');
+}
+if (isNaN(iterations) || isNaN(dice)) {
+    return;
+}
+
 console.log(`Number of simulations was ${options.iterations} using ${options.dice} dice.`);
 
 let scores = {};
