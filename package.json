@@ -1,0 +1,17 @@
+{
+  "name": "dicegame",
+  "version": "1.0.0",
+  "description": "Dice Game Simulation",
+  "main": "bin/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mark Dion",
+  "license": "ISC",
+  "bin": {
+    "dice-game": "./bin/index.js"
+  },
+  "dependencies": {
+    "yargs": "^17.6.2"
+  }
+}
